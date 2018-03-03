@@ -1,0 +1,22 @@
+[0m[[0minfo[0m] [0mRunning HTTPServer [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/sawanatsumi/scala-http-server/target/scala-2.12/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/sawanatsumi/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(Thread-1) java.time.format.DateTimeParseException: Text 'å 18 2 2017 15:56:01 +0900' could not be parsed at index 0[0m
+java.time.format.DateTimeParseException: Text 'å 18 2 2017 15:56:01 +0900' could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:1949)
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1851)
+	at java.time.OffsetDateTime.parse(OffsetDateTime.java:402)
+	at HttpProtocol.$anonfun$run$5(HttpProtocol.scala:23)
+	at HttpProtocol.$anonfun$run$5$adapted(HttpProtocol.scala:23)
+	at scala.Option.map(Option.scala:146)
+	at HttpProtocol.$anonfun$run$2(HttpProtocol.scala:23)
+	at HttpProtocol.$anonfun$run$2$adapted(HttpProtocol.scala:14)
+	at Loan.foreach(Loan.scala:7)
+	at HttpProtocol.$anonfun$run$1(HttpProtocol.scala:14)
+	at HttpProtocol.$anonfun$run$1$adapted(HttpProtocol.scala:13)
+	at Loan.foreach(Loan.scala:7)
+	at HttpProtocol.run(HttpProtocol.scala:13)
+[0m[[31merror[0m] [0m(Thread-2) java.time.format.DateTimeParseException: Text 'å 18 2 2017 15:56:01 +0900' could not be parsed at index 0[0m
